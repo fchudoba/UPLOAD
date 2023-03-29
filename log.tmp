@@ -1,0 +1,84 @@
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +     MAD-X 5.09.00  (64 bit, Linux)       +
+  + Support: mad@cern.ch, http://cern.ch/mad +
+  + Release   date: 2023.03.08               +
+  + Execution date: 2023.03.29 10:50:42      +
+  ++++++++++++++++++++++++++++++++++++++++++++
+option, warn, info;
+
+option, echo=false, warn=false;
+
+START MATCHING
+
+number of variables:    4
+user given constraints: 4
+total constraints:      4
+
+START LMDIF:
+
+Initial Penalty Function =   0.10223233E+01
+
+
+call:       6   Penalty function =   0.78061541E-04
+call:      11   Penalty function =   0.52308100E-09
+call:      16   Penalty function =   0.27034842E-12
+call:      21   Penalty function =   0.89910191E-14
+ ++++++++++ LMDIF ended: converged without success
+call:      28   Penalty function =   0.89910191E-14
+
+MATCH SUMMARY
+
+Node_Name                  Constraint   Type  Target Value       Final Value        Penalty
+--------------------------------------------------------------------------------------------------
+Global constraint:         q1           4     6.23100000E+01     6.23100000E+01     1.45907713E-24
+Global constraint:         q2           4     6.03200000E+01     6.03200000E+01     8.53231955E-25
+Global constraint:         dq1          4     2.00000000E+00     2.00000005E+00     2.63316932E-15
+Global constraint:         dq2          4     2.00000000E+00     2.00000008E+00     6.35784974E-15
+
+
+Final Penalty Function =   8.99101906e-15
+
+
+
+
+
+Variable                 Final Value  Initial Value Lower Limit  Upper Limit 
+--------------------------------------------------------------------------------
+dqx.b1_sq                 2.70426e-05  0.00000e+00 -1.00000e+20  1.00000e+20
+dqy.b1_sq                -2.69017e-05  0.00000e+00 -1.00000e+20  1.00000e+20
+dqpx.b1_sq                7.36733e-01  0.00000e+00 -1.00000e+20  1.00000e+20
+dqpy.b1_sq                6.94365e-01  0.00000e+00 -1.00000e+20  1.00000e+20
+
+END MATCH SUMMARY
+
+VARIABLE "TAR" SET TO   8.99101906e-15
+makethin: style chosen : teapot
+makethin: slicing sequence : lhcb1
+enter TRACK module
+one pass is on
+losses recorded
+particle #     1 lost turn     13  at pos. s =   9982.46 element=acsca.d5l4.b1                                    aperture =RF-Bucket                                       
+    X=                       NaN   Y=                       NaN   T=                       NaN
+
+++++++ table: tracksumm
+
+    number       turn                  x                 px 
+         1          0             0.0002                  0 
+         1         13               -nan               -nan 
+
+                 y                 py                  t                 pt 
+            0.0002                  0                  0                  0 
+              -nan               -nan               -nan               -nan 
+
+                 s                  e 
+                 0                  0 
+       9982.462016                  0 
+exit TRACK module
+
+
+  Number of warnings: 0
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +          MAD-X finished normally         +
+  ++++++++++++++++++++++++++++++++++++++++++++
